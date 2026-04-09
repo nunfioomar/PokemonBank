@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokémon Bank - Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <img src="images/logo.png" alt="Pokémon Bank Logo" class="img-fluid mb-4" style="max-width: 200px; display: none;">
+                <h1 class="font-weight-bold text-danger mb-4">Pokémon Bank</h1>
+                
+                <div class="card p-4">
+                    <h4 class="mb-4">Bienvenido al ATM</h4>
+                    <form action="acciones.html">
+                        <div class="form-group">
+                            <label for="pinInput" class="font-weight-bold">Ingrese su PIN</label>
+                            <input type="password" class="form-control form-control-lg text-center mx-auto" id="pinInput" maxlength="4" placeholder="****" required style="max-width: 150px; letter-spacing: 10px;">
+                            <small class="form-text text-muted mt-2">Solo 4 dígitos numéricos.</small>
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-custom btn-block mt-4">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
