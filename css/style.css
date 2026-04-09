@@ -1,0 +1,29 @@
+/* style.css */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.poke-bg {
+    background-color: #cc0000; /* Rojo Pokémon */
+    color: white;
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-custom {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.atm-screen {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #ccc;
+}

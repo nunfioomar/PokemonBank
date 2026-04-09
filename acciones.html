@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal - Pokémon Bank</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark poke-bg mb-4">
+        <span class="navbar-brand mb-0 h1">Pokémon Bank ATM</span>
+        <a href="index.html" class="btn btn-light btn-sm font-weight-bold text-danger">Salir</a>
+    </nav>
+
+    <div class="container">
+        <div class="atm-screen mb-4 text-center">
+            <h4>Hola, <span class="text-danger font-weight-bold">Usuario Prueba</span></h4>
+            <p class="mb-0">Cuenta No: <strong>0987654321</strong></p>
+        </div>
+
+        <h5 class="text-center mb-4">¿Qué transacción deseas realizar?</h5>
+
+        <div class="row text-center">
+            <div class="col-md-6 mb-3">
+                <button class="btn btn-primary btn-lg btn-block btn-custom py-4">Depositar</button>
+            </div>
+            <div class="col-md-6 mb-3">
+                <button class="btn btn-warning btn-lg btn-block btn-custom py-4 text-white">Retirar</button>
+            </div>
+            <div class="col-md-6 mb-3">
+                <button class="btn btn-success btn-lg btn-block btn-custom py-4">Consultar Saldo</button>
+            </div>
+            
+            <div class="col-md-6 mb-3">
+                <div class="dropdown">
+                    <button class="btn btn-info btn-lg btn-block btn-custom py-4 dropdown-toggle" type="button" id="dropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pago de Servicios
+                    </button>
+                    <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownServicios">
+                        <a class="dropdown-item" href="#">Energía Eléctrica</a>
+                        <a class="dropdown-item" href="#">Internet</a>
+                        <a class="dropdown-item" href="#">Telefonía</a>
+                        <a class="dropdown-item" href="#">Agua Potable</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-2">
+                <a href="historial.html" class="btn btn-secondary btn-block btn-custom">Ver Historial</a>
+            </div>
+            <div class="col-md-4 mb-2">
+                <a href="graficos.html" class="btn btn-dark btn-block btn-custom">Ver Gráficos</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
