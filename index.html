@@ -17,7 +17,7 @@
                 
                 <div class="card p-4">
                     <h4 class="mb-4">Bienvenido al ATM</h4>
-                    <form action="acciones.html">
+                    <form id="loginForm">
                         <div class="form-group">
                             <label for="pinInput" class="font-weight-bold">Ingrese su PIN</label>
                             <input type="password" class="form-control form-control-lg text-center mx-auto" id="pinInput" maxlength="4" placeholder="****" required style="max-width: 150px; letter-spacing: 10px;">
@@ -30,5 +30,11 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="js/app.js"></script>
 </body>
 </html>
