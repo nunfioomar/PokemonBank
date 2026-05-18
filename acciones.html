@@ -8,20 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <nav class="navbar navbar-dark poke-bg mb-4">
         <span class="navbar-brand mb-0 h1">Pokémon Bank ATM</span>
-        <a href="index.html" id="btnSalir" class="btn btn-light btn-sm font-weight-bold text-danger">Salir</a>
+        <a href="#" id="btnSalir" class="btn btn-light btn-sm font-weight-bold text-danger">Salir</a>
     </nav>
-
     <div class="container">
         <div class="atm-screen mb-4 text-center">
             <h4>Hola, <span id="nombreUsuario" class="text-danger font-weight-bold"></span></h4>
             <p class="mb-0">Cuenta No: <strong id="cuentaUsuario"></strong></p>
         </div>
-
         <h5 class="text-center mb-4">¿Qué transacción deseas realizar?</h5>
-
         <div class="row text-center">
             <div class="col-md-6 mb-3">
                 <button id="btnDepositar" class="btn btn-primary btn-lg btn-block btn-custom py-4">Depositar</button>
@@ -32,42 +28,30 @@
             <div class="col-md-6 mb-3">
                 <button id="btnConsultar" class="btn btn-success btn-lg btn-block btn-custom py-4">Consultar Saldo</button>
             </div>
-            
             <div class="col-md-6 mb-3">
                 <div class="dropdown">
-                    <button class="btn btn-info btn-lg btn-block btn-custom py-4 dropdown-toggle" type="button" id="dropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Pago de Servicios
-                    </button>
-                    <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownServicios">
-                        <a class="dropdown-item" href="#">Energía Eléctrica</a>
-                        <a class="dropdown-item" href="#">Internet</a>
-                        <a class="dropdown-item" href="#">Telefonía</a>
-                        <a class="dropdown-item" href="#">Agua Potable</a>
+                    <button class="btn btn-info btn-lg btn-block btn-custom py-4 dropdown-toggle" type="button" id="dropdownServicios" data-toggle="dropdown">Pago de Servicios</button>
+                    <div class="dropdown-menu w-100 text-center">
+                        <a class="dropdown-item pago-servicio" href="#" data-nombre="Energía Eléctrica">Energía Eléctrica</a>
+                        <a class="dropdown-item pago-servicio" href="#" data-nombre="Internet">Internet</a>
+                        <a class="dropdown-item pago-servicio" href="#" data-nombre="Telefonía">Telefonía</a>
+                        <a class="dropdown-item pago-servicio" href="#" data-nombre="Agua Potable">Agua Potable</a>
                     </div>
                 </div>
             </div>
         </div>
-
         <hr class="my-4">
-
         <div class="row justify-content-center">
-            <div class="col-md-4 mb-2">
-                <a href="historial.html" class="btn btn-secondary btn-block btn-custom">Ver Historial</a>
-            </div>
-            <div class="col-md-4 mb-2">
-                <a href="graficos.html" class="btn btn-dark btn-block btn-custom">Ver Gráficos</a>
-            </div>
+            <div class="col-md-4 mb-2"><a href="historial.html" class="btn btn-secondary btn-block btn-custom">Ver Historial</a></div>
+            <div class="col-md-4 mb-2"><a href="graficos.html" class="btn btn-dark btn-block btn-custom">Ver Gráficos</a></div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    
     <script src="js/app.js"></script>
 </body>
 </html>

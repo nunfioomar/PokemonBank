@@ -9,7 +9,6 @@ const defaultUser = {
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // CAMBIO FASE 2: Uso de LocalStorage para guardar datos persistentes
     if (!localStorage.getItem('pokemonBankUser')) {
         localStorage.setItem('pokemonBankUser', JSON.stringify(defaultUser));
     }
@@ -23,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault(); 
             const pinInput = document.getElementById('pinInput').value;
             
-            // CAMBIO FASE 2: Validación estricta con la librería ValidateJS
+            //Validación estricta con ValidateJS
             const constraints = {
                 pin: {
                     presence: { allowEmpty: false },
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const validationResult = validate({ pin: pinInput }, constraints);
             
             if (validationResult) {
-                // CAMBIO FASE 2: Uso de SweetAlert en lugar de alert()
+                // SweetAlert en lugar de alert()
                 swal("Error", "El PIN debe tener exactamente 4 números.", "error");
                 return;
             }
@@ -52,15 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- LÓGICA DE LA PANTALLA DE ACCIONES ---
+    //LÓGICA DE LA PANTALLA DE ACCIONES
     const nombreUsuarioEl = document.getElementById('nombreUsuario');
     if (nombreUsuarioEl) {
         
-        // CAMBIO FASE 2: Imprimir nombre y cuenta desde el LocalStorage
+        // Imprimir nombre y cuenta desde el LocalStorage
         nombreUsuarioEl.innerText = userData.nombre;
         document.getElementById('cuentaUsuario').innerText = userData.cuenta;
 
-        // CAMBIO FASE 2: Botón Consultar Saldo usando SweetAlert
+        // Botón Consultar Saldo usando SweetAlert
         const btnConsultar = document.getElementById('btnConsultar');
         if (btnConsultar) {
             btnConsultar.addEventListener('click', () => {
@@ -69,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         
-        // CAMBIO FASE 2: Lógica de Depósito interactivo
+        // Depósito interactivo
         const btnDepositar = document.getElementById('btnDepositar');
         if (btnDepositar) {
             btnDepositar.addEventListener('click', () => {
@@ -101,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // CAMBIO FASE 2: Lógica de Retiro interactivo
+        // Retiro interactivo
         const btnRetirar = document.getElementById('btnRetirar');
         if (btnRetirar) {
             btnRetirar.addEventListener('click', () => {
@@ -137,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // CAMBIO FASE 2: Botón Salir con confirmación
+        // Botón Salir con confirmación
         const btnSalir = document.getElementById('btnSalir');
         if (btnSalir) {
             btnSalir.addEventListener('click', (e) => {
